@@ -125,7 +125,9 @@ async function loadData() {
 }
 
 function render(data) {
-  const { monthly, employees, holidays } = data;
+  const { months, employees, holidays } = data;
+  // 最新月のデータを使用
+  const monthly = months && months.length > 0 ? months[months.length - 1] : data.monthly;
 
   const cards = [
     { icon: '👥', number: employees.totalCount, unit: '名', label: '従業員数', note: `${monthly.yearMonth} 時点` },

@@ -1,50 +1,517 @@
 {
-  "updatedAt": "2026-05-04T03:26:50.403Z",
-  "monthly": {
-    "yearMonth": "2026-04",
-    "totalEmployees": 63,
-    "activeEmployees": 49,
-    "totalOvertimeHours": 312,
-    "avgOvertimeHours": 6.4,
-    "divisions": [
-      {
-        "name": "足立",
-        "count": 18,
-        "overtimeHours": 94.5,
-        "avgOvertimeHours": 5.3
-      },
-      {
-        "name": "柏",
-        "count": 16,
-        "overtimeHours": 135.3,
-        "avgOvertimeHours": 8.5
-      },
-      {
-        "name": "ながれやま",
-        "count": 7,
-        "overtimeHours": 2.8,
-        "avgOvertimeHours": 0.4
-      },
-      {
-        "name": "我孫子",
-        "count": 3,
-        "overtimeHours": 49,
-        "avgOvertimeHours": 16.3
-      },
-      {
-        "name": "柏さくら台",
-        "count": 2,
-        "overtimeHours": 30.5,
-        "avgOvertimeHours": 15.3
-      },
-      {
-        "name": "アイ調剤薬局",
-        "count": 1,
-        "overtimeHours": 0,
-        "avgOvertimeHours": 0
-      }
-    ]
-  },
+  "updatedAt": "2026-05-04T03:46:37.462Z",
+  "months": [
+    {
+      "yearMonth": "2025-06",
+      "totalEmployees": 63,
+      "activeEmployees": 44,
+      "totalOvertimeHours": 372,
+      "avgOvertimeHours": 8.5,
+      "divisions": [
+        {
+          "name": "柏",
+          "count": 16,
+          "overtimeHours": 163.5,
+          "avgOvertimeHours": 10.2
+        },
+        {
+          "name": "足立",
+          "count": 15,
+          "overtimeHours": 131.8,
+          "avgOvertimeHours": 8.8
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 2.5,
+          "avgOvertimeHours": 0.4
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 54,
+          "avgOvertimeHours": 18
+        },
+        {
+          "name": "柏さくら台",
+          "count": 1,
+          "overtimeHours": 20.3,
+          "avgOvertimeHours": 20.3
+        }
+      ]
+    },
+    {
+      "yearMonth": "2025-07",
+      "totalEmployees": 63,
+      "activeEmployees": 45,
+      "totalOvertimeHours": 463,
+      "avgOvertimeHours": 10.3,
+      "divisions": [
+        {
+          "name": "足立",
+          "count": 16,
+          "overtimeHours": 193.8,
+          "avgOvertimeHours": 12.1
+        },
+        {
+          "name": "柏",
+          "count": 16,
+          "overtimeHours": 176.5,
+          "avgOvertimeHours": 11
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 12.8,
+          "avgOvertimeHours": 1.8
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 57.8,
+          "avgOvertimeHours": 19.3
+        },
+        {
+          "name": "柏さくら台",
+          "count": 1,
+          "overtimeHours": 22.3,
+          "avgOvertimeHours": 22.3
+        }
+      ]
+    },
+    {
+      "yearMonth": "2025-08",
+      "totalEmployees": 63,
+      "activeEmployees": 46,
+      "totalOvertimeHours": 419.3,
+      "avgOvertimeHours": 9.1,
+      "divisions": [
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 183,
+          "avgOvertimeHours": 10.8
+        },
+        {
+          "name": "足立",
+          "count": 16,
+          "overtimeHours": 157.5,
+          "avgOvertimeHours": 9.8
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 1.8,
+          "avgOvertimeHours": 0.3
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 59,
+          "avgOvertimeHours": 19.7
+        },
+        {
+          "name": "柏さくら台",
+          "count": 1,
+          "overtimeHours": 18,
+          "avgOvertimeHours": 18
+        }
+      ]
+    },
+    {
+      "yearMonth": "2025-09",
+      "totalEmployees": 63,
+      "activeEmployees": 47,
+      "totalOvertimeHours": 371.5,
+      "avgOvertimeHours": 7.9,
+      "divisions": [
+        {
+          "name": "柏",
+          "count": 18,
+          "overtimeHours": 144.5,
+          "avgOvertimeHours": 8
+        },
+        {
+          "name": "足立",
+          "count": 16,
+          "overtimeHours": 146.5,
+          "avgOvertimeHours": 9.2
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 7,
+          "avgOvertimeHours": 1
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 55,
+          "avgOvertimeHours": 18.3
+        },
+        {
+          "name": "柏さくら台",
+          "count": 1,
+          "overtimeHours": 18.5,
+          "avgOvertimeHours": 18.5
+        }
+      ]
+    },
+    {
+      "yearMonth": "2025-10",
+      "totalEmployees": 63,
+      "activeEmployees": 46,
+      "totalOvertimeHours": 387.8,
+      "avgOvertimeHours": 8.4,
+      "divisions": [
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 185.3,
+          "avgOvertimeHours": 10.9
+        },
+        {
+          "name": "足立",
+          "count": 16,
+          "overtimeHours": 122.5,
+          "avgOvertimeHours": 7.7
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 6.5,
+          "avgOvertimeHours": 0.9
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 59.3,
+          "avgOvertimeHours": 19.8
+        },
+        {
+          "name": "柏さくら台",
+          "count": 1,
+          "overtimeHours": 14.3,
+          "avgOvertimeHours": 14.3
+        }
+      ]
+    },
+    {
+      "yearMonth": "2025-11",
+      "totalEmployees": 63,
+      "activeEmployees": 48,
+      "totalOvertimeHours": 336,
+      "avgOvertimeHours": 7,
+      "divisions": [
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 121,
+          "avgOvertimeHours": 7.1
+        },
+        {
+          "name": "足立",
+          "count": 16,
+          "overtimeHours": 135,
+          "avgOvertimeHours": 8.4
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 8.8,
+          "avgOvertimeHours": 1.3
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 44,
+          "avgOvertimeHours": 14.7
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 17.5,
+          "avgOvertimeHours": 8.8
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 9.8,
+          "avgOvertimeHours": 9.8
+        }
+      ]
+    },
+    {
+      "yearMonth": "2025-12",
+      "totalEmployees": 63,
+      "activeEmployees": 50,
+      "totalOvertimeHours": 528,
+      "avgOvertimeHours": 10.6,
+      "divisions": [
+        {
+          "name": "足立",
+          "count": 18,
+          "overtimeHours": 211.8,
+          "avgOvertimeHours": 11.8
+        },
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 204,
+          "avgOvertimeHours": 12
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 3.5,
+          "avgOvertimeHours": 0.5
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 70.5,
+          "avgOvertimeHours": 23.5
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 38.3,
+          "avgOvertimeHours": 19.1
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        }
+      ]
+    },
+    {
+      "yearMonth": "2026-01",
+      "totalEmployees": 63,
+      "activeEmployees": 50,
+      "totalOvertimeHours": 339.3,
+      "avgOvertimeHours": 6.8,
+      "divisions": [
+        {
+          "name": "足立",
+          "count": 18,
+          "overtimeHours": 123.3,
+          "avgOvertimeHours": 6.8
+        },
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 136.3,
+          "avgOvertimeHours": 8
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 2,
+          "avgOvertimeHours": 0.3
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 48,
+          "avgOvertimeHours": 16
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 29.8,
+          "avgOvertimeHours": 14.9
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        }
+      ]
+    },
+    {
+      "yearMonth": "2026-02",
+      "totalEmployees": 63,
+      "activeEmployees": 50,
+      "totalOvertimeHours": 369.3,
+      "avgOvertimeHours": 7.4,
+      "divisions": [
+        {
+          "name": "足立",
+          "count": 18,
+          "overtimeHours": 114.5,
+          "avgOvertimeHours": 6.4
+        },
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 172,
+          "avgOvertimeHours": 10.1
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 6,
+          "avgOvertimeHours": 0.9
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 49.5,
+          "avgOvertimeHours": 16.5
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 27.3,
+          "avgOvertimeHours": 13.6
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        }
+      ]
+    },
+    {
+      "yearMonth": "2026-03",
+      "totalEmployees": 63,
+      "activeEmployees": 50,
+      "totalOvertimeHours": 401.5,
+      "avgOvertimeHours": 8,
+      "divisions": [
+        {
+          "name": "足立",
+          "count": 18,
+          "overtimeHours": 136,
+          "avgOvertimeHours": 7.6
+        },
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 169,
+          "avgOvertimeHours": 9.9
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 4.8,
+          "avgOvertimeHours": 0.7
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 56.3,
+          "avgOvertimeHours": 18.8
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 35.5,
+          "avgOvertimeHours": 17.8
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        }
+      ]
+    },
+    {
+      "yearMonth": "2026-04",
+      "totalEmployees": 63,
+      "activeEmployees": 49,
+      "totalOvertimeHours": 312,
+      "avgOvertimeHours": 6.4,
+      "divisions": [
+        {
+          "name": "足立",
+          "count": 18,
+          "overtimeHours": 94.5,
+          "avgOvertimeHours": 5.3
+        },
+        {
+          "name": "柏",
+          "count": 16,
+          "overtimeHours": 135.3,
+          "avgOvertimeHours": 8.5
+        },
+        {
+          "name": "ながれやま",
+          "count": 7,
+          "overtimeHours": 2.8,
+          "avgOvertimeHours": 0.4
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 49,
+          "avgOvertimeHours": 16.3
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 30.5,
+          "avgOvertimeHours": 15.3
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        }
+      ]
+    },
+    {
+      "yearMonth": "2026-05",
+      "totalEmployees": 63,
+      "activeEmployees": 45,
+      "totalOvertimeHours": 1.8,
+      "avgOvertimeHours": 0,
+      "divisions": [
+        {
+          "name": "柏",
+          "count": 17,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        },
+        {
+          "name": "足立",
+          "count": 15,
+          "overtimeHours": 1.8,
+          "avgOvertimeHours": 0.1
+        },
+        {
+          "name": "ながれやま",
+          "count": 6,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        },
+        {
+          "name": "我孫子",
+          "count": 3,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        },
+        {
+          "name": "柏さくら台",
+          "count": 2,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        },
+        {
+          "name": "アイ調剤薬局",
+          "count": 1,
+          "overtimeHours": 0,
+          "avgOvertimeHours": 0
+        }
+      ]
+    }
+  ],
   "employees": {
     "totalCount": 63,
     "maleCount": 52,
