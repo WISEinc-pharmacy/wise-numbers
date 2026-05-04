@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-04T03:11:36.292Z",
+  "updatedAt": "2026-05-04T03:26:50.403Z",
   "monthly": {
     "yearMonth": "2026-04",
     "totalEmployees": 63,
@@ -15,9 +15,9 @@
       },
       {
         "name": "柏",
-        "count": 18,
-        "overtimeHours": 165.8,
-        "avgOvertimeHours": 9.2
+        "count": 16,
+        "overtimeHours": 135.3,
+        "avgOvertimeHours": 8.5
       },
       {
         "name": "ながれやま",
@@ -27,9 +27,21 @@
       },
       {
         "name": "我孫子",
-        "count": 4,
+        "count": 3,
         "overtimeHours": 49,
-        "avgOvertimeHours": 12.3
+        "avgOvertimeHours": 16.3
+      },
+      {
+        "name": "柏さくら台",
+        "count": 2,
+        "overtimeHours": 30.5,
+        "avgOvertimeHours": 15.3
+      },
+      {
+        "name": "アイ調剤薬局",
+        "count": 1,
+        "overtimeHours": 0,
+        "avgOvertimeHours": 0
       }
     ]
   },
