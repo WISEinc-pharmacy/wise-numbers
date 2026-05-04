@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数字で見るワイズ | ワイズ株式会社</title>
+<style>
+:root {
+  --primary: #1a5276;
+  --accent: #2ecc71;
+  --bg: #f8fafe;
+  --card-bg: #ffffff;
+  --text: #2c3e50;
+  --text-light: #7f8c8d;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Yu Gothic UI', 'Hiragino Sans', sans-serif; background: var(--bg); color: var(--text); }
+
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #2980b9 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 24px 48px;
+}
+.hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+.hero p { font-size: 15px; opacity: 0.85; }
+.hero .company { font-size: 13px; opacity: 0.7; margin-top: 12px; }
+
+.grid {
+  max-width: 1000px;
+  margin: -30px auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-4px); }
+.card .icon { font-size: 32px; margin-bottom: 12px; }
+.card .number { font-size: 36px; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+.card .unit { font-size: 14px; color: var(--primary); font-weight: 600; }
+.card .label { font-size: 13px; color: var(--text-light); margin-top: 8px; }
+.card .note { font-size: 11px; color: #bdc3c7; margin-top: 6px; }
+
+.section-title {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.division-grid {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.division-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.division-card .name { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+.division-card .stat { font-size: 12px; color: var(--text-light); }
+.division-card .overtime { font-size: 18px; font-weight: 700; color: var(--primary); }
+
+.footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-light);
+  font-size: 12px;
+}
+.footer a { color: var(--primary); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.update-info {
+  text-align: center;
+  padding: 12px;
+  font-size: 11px;
+  color: #bdc3c7;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>数字で見るワイズ</h1>
+  <p>データで伝える、私たちの働き方</p>
+  <div class="company">ワイズ株式会社（調剤薬局）</div>
+</div>
+
+<div class="grid" id="mainGrid"></div>
+
+<div class="section-title">店舗別 平均残業時間</div>
+<div class="division-grid" id="divisionGrid"></div>
+
+<div class="update-info" id="updateInfo"></div>
+
+<div class="footer">
+  <p>ワイズ株式会社 | <a href="https://wiseinc-pharmacy.github.io/career-diagnosis-lp/">キャリア診断はこちら</a></p>
+</div>
+
+<script>
+async function loadData() {
+  try {
+    const res = await fetch('./data/kot_data.json');
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    document.getElementById('mainGrid').innerHTML = '<p style="padding:40px;text-align:center;color:#999;">データ読み込み中...</p>';
+  }
+}
+
+function render(data) {
+  const { monthly, employees, holidays } = data;
+
+  const cards = [
+    { icon: '👥', number: employees.totalCount, unit: '名', label: '従業員数', note: `${monthly.yearMonth} 時点` },
+    { icon: '🏖️', number: holidays.rate, unit: '%', label: '有給取得率', note: `${holidays.year}年度実績` },
+    { icon: '⏰', number: monthly.avgOvertimeHours, unit: '時間/月', label: '平均残業時間', note: `全社平均 ${monthly.yearMonth}` },
+    { icon: '💊', number: employees.pharmacistRate, unit: '%', label: '薬剤師比率', note: `${employees.pharmacistCount}名/${employees.totalCount}名` },
+    { icon: '🏢', number: monthly.divisions.length, unit: '拠点', label: '薬局拠点数', note: monthly.divisions.map(d => d.name).join('・') },
+    { icon: '📅', number: holidays.avgObtained, unit: '日/年', label: '平均有給取得日数', note: `${holidays.year}年度` },
+  ];
+
+  document.getElementById('mainGrid').innerHTML = cards.map(c => `
+    <div class="card">
+      <div class="icon">${c.icon}</div>
+      <div class="number">${c.number}</div>
+      <div class="unit">${c.unit}</div>
+      <div class="label">${c.label}</div>
+      <div class="note">${c.note}</div>
+    </div>
+  `).join('');
+
+  // 店舗別残業
+  document.getElementById('divisionGrid').innerHTML = monthly.divisions.map(d => `
+    <div class="division-card">
+      <div class="name">${d.name}</div>
+      <div class="overtime">${d.avgOvertimeHours}h</div>
+      <div class="stat">${d.count}名 | 合計${d.overtimeHours}h</div>
+    </div>
+  `).join('');
+
+  // 更新日
+  const updated = new Date(data.updatedAt);
+  document.getElementById('updateInfo').textContent = `最終更新: ${updated.toLocaleDateString('ja-JP')}`;
+}
+
+loadData();
+</script>
+</body>
+</html>

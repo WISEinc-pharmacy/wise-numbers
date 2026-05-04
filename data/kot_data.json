@@ -1,0 +1,51 @@
+{
+  "updatedAt": "2026-05-04T03:11:36.292Z",
+  "monthly": {
+    "yearMonth": "2026-04",
+    "totalEmployees": 63,
+    "activeEmployees": 49,
+    "totalOvertimeHours": 312,
+    "avgOvertimeHours": 6.4,
+    "divisions": [
+      {
+        "name": "足立",
+        "count": 18,
+        "overtimeHours": 94.5,
+        "avgOvertimeHours": 5.3
+      },
+      {
+        "name": "柏",
+        "count": 18,
+        "overtimeHours": 165.8,
+        "avgOvertimeHours": 9.2
+      },
+      {
+        "name": "ながれやま",
+        "count": 7,
+        "overtimeHours": 2.8,
+        "avgOvertimeHours": 0.4
+      },
+      {
+        "name": "我孫子",
+        "count": 4,
+        "overtimeHours": 49,
+        "avgOvertimeHours": 12.3
+      }
+    ]
+  },
+  "employees": {
+    "totalCount": 63,
+    "maleCount": 52,
+    "femaleCount": 11,
+    "pharmacistCount": 30,
+    "pharmacistRate": 47.6
+  },
+  "holidays": {
+    "year": 2025,
+    "employeeCount": 30,
+    "totalGranted": 452,
+    "totalObtained": 331,
+    "rate": 73.2,
+    "avgObtained": 11
+  }
+}
